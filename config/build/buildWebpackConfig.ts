@@ -1,14 +1,13 @@
-import path from "path";
-import { Configuration } from "webpack";
+import { type Configuration } from "webpack";
 import { buildLoaders } from "./buildLoaders";
 import { buildPlugins } from "./buildPlugins";
 import { buildResolvers } from "./buildResolver";
-import { BuildOptions } from "./types/config";
+import { type BuildOptions } from "./types/config";
 import { buildDevServer } from "./buildDevServer";
 
 export function buildWebpackConfig(options: BuildOptions): Configuration {
   const {
-    paths: { entry, html, build },
+    paths: { entry, build },
     mode,
     isDev,
   } = options;

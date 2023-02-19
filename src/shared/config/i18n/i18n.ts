@@ -1,20 +1,20 @@
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
 
-import Backend from "i18next-http-backend";
+import Backend from 'i18next-http-backend';
 
 i18n
   .use(Backend)
   .use(initReactI18next)
   .init({
-    fallbackLng: "ru",
+    fallbackLng: 'ru',
     debug: __IS_DEV__,
 
     interpolation: {
       escapeValue: false,
     },
     backend: {
-      loadPath: "/locales/{{lng}}/{{ns}}.json",
+      loadPath: '/locales/{{lng}}/{{ns}}.json',
     },
     react: {
       useSuspense: false,

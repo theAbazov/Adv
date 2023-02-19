@@ -15,29 +15,29 @@ export default {
 
   // Automatically clear mock calls, instances and results before every test
   clearMocks: true,
-  testEnvironment: "jsdom",
+  testEnvironment: 'jsdom',
   coveragePathIgnorePatterns: [
-    "\\\\node_modules\\\\",
+    '\\\\node_modules\\\\',
   ],
   moduleFileExtensions: [
-    "js",
-    "jsx",
-    "ts",
-    "tsx",
-    "json",
-    "node",
+    'js',
+    'jsx',
+    'ts',
+    'tsx',
+    'json',
+    'node',
   ],
   moduleDirectories: [
-    "node_modules",
+    'node_modules',
   ],
   testMatch: [
     // Обнаружил разницу между МАК ОС и ВИНДОУС!!!
-    "<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)",
+    '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)',
   ],
-  rootDir: "../../",
-  preset: "ts-jest",
+  rootDir: '../../',
+  preset: 'ts-jest',
   transform: {
-    "^.+\\.ts?$": "ts-jest",
+    '^.+\\.ts?$': 'ts-jest',
   },
   // Indicates whether the coverage information should be collected while executing the test
   // collectCoverage: false,
